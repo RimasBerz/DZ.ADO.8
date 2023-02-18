@@ -1,0 +1,26 @@
+﻿<Window x:Class="Sales.LinqWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Sales"
+        mc:Ignorable="d"
+        Title="LinqWindow" Height="450" Width="800">
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition/>
+            <ColumnDefinition/>
+        </Grid.ColumnDefinitions>
+        <StackPanel Orientation="Vertical">
+            <Button x:Name="Simple" Content="SimplePrice" Margin="10" Click="SimpleP_click"/>
+            <Button x:Name="SimpleN" Content="SimpleName" Margin="10" Click="SimpleN_click"/>
+            <Button x:Name="SimpleRP" Content="SimpleReversePrice" Margin="10" Click="SimpleRP_click"/>
+            <Button x:Name="SimpleTC" Content="SimplePrice200" Margin="10" Click="SimpleTC_click"/>
+            <Button x:Name="SimpleGOW" Content="GOW" Margin="10" Click="SimpleGOW_click"/>
+            <Button x:Name="SimpleMD" Content="MD" Margin="10" Click="SimpleMD_click"/>
+            <Button x:Name="SimpleMW" Content="MW" Margin="10" Click="SimpleMW_click"/>
+            <Button x:Name="SimpleMDW" Content="MDW" Margin="10" Click="SimpleMDW_click"/>
+        </StackPanel>
+        <TextBlock Grid.Column="1" x:Name="textBlock1"/>
+    </Grid>
+</Window>
